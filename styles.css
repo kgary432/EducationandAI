@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #1c2430;
+  background: #f4f6f8;
+  line-height: 1.5;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3.5rem;
+}
+
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.page-header-copy {
+  min-width: 0;
+}
+
+.page-header h1 {
+  margin: 0 0 0.4rem;
+  font-size: 2rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.page-header p {
+  margin: 0;
+  color: #5b6675;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, minmax(8.5rem, auto));
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  min-height: 8.5rem;
+  padding: 1.15rem 1.2rem;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #e2e7ee;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(28, 36, 48, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-2px);
+  border-color: #c5d0dd;
+  box-shadow: 0 8px 20px rgba(28, 36, 48, 0.08);
+  outline: none;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 650;
+}
+
+.card-desc {
+  margin-top: 0.35rem;
+  color: #5b6675;
+  font-size: 0.92rem;
+}
+
+.scenario-button {
+  flex-shrink: 0;
+  padding: 0.7rem 1rem;
+  font: inherit;
+  font-weight: 650;
+  color: #fff;
+  background: #1c2430;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.scenario-button:hover,
+.scenario-button:focus-visible {
+  background: #2c3644;
+  outline: none;
+}
+
+.scenario-dialog {
+  width: min(32rem, calc(100% - 2rem));
+  padding: 1.5rem;
+  border: 1px solid #e2e7ee;
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgba(28, 36, 48, 0.18);
+}
+
+.scenario-dialog::backdrop {
+  background: rgba(28, 36, 48, 0.45);
+}
+
+.scenario-text {
+  margin: 0 0 1.25rem;
+  font-size: 1.05rem;
+}
+
+.scenario-close {
+  padding: 0.55rem 0.9rem;
+  font: inherit;
+  font-weight: 650;
+  color: #1c2430;
+  background: #f4f6f8;
+  border: 1px solid #e2e7ee;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.scenario-close:hover,
+.scenario-close:focus-visible {
+  background: #e8edf3;
+  outline: none;
+}
+
+@media (max-width: 800px) {
+  .page-header {
+    flex-direction: column;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
