@@ -122,6 +122,30 @@ body {
   font-size: 1.05rem;
 }
 
+.scenario-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.scenario-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  font-weight: 650;
+  color: #fff;
+  text-decoration: none;
+  background: #1c2430;
+  border-radius: 8px;
+}
+
+.scenario-link:hover,
+.scenario-link:focus-visible {
+  background: #2c3644;
+  outline: none;
+}
+
 .scenario-close {
   padding: 0.55rem 0.9rem;
   font: inherit;
