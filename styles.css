@@ -51,6 +51,35 @@ body {
   font-size: 0.95rem;
 }
 
+.questions {
+  margin-bottom: 1.25rem;
+  padding: 0.9rem 1rem 0.85rem;
+  background: #e7f2f8;
+  border: 1px solid #b7d0e3;
+  border-radius: 12px;
+}
+
+.questions h2 {
+  margin: 0 0 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.question-list {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+  color: #2f5d78;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.question-list li::marker {
+  color: #6d98b6;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -222,6 +251,22 @@ body {
   .scenario-button {
     width: auto;
     flex-shrink: 0;
+  }
+
+  .questions {
+    margin-bottom: 1.75rem;
+    padding: 1.05rem 1.2rem 1rem;
+  }
+
+  .questions h2 {
+    font-size: 1.05rem;
+  }
+
+  .question-list {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+    row-gap: 0.4rem;
+    font-size: 0.9rem;
   }
 
   .card-grid {
