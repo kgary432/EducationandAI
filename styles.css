@@ -6,13 +6,15 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  background: #d5e4ef;
 }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", system-ui, sans-serif;
-  color: #1c2430;
-  background: #f4f6f8;
+  font-family: "Lato", system-ui, sans-serif;
+  font-stretch: semi-expanded;
+  color: #1b3144;
+  background: #d5e4ef;
   line-height: 1.5;
 }
 
@@ -45,7 +47,7 @@ body {
 
 .page-header p {
   margin: 0;
-  color: #5b6675;
+  color: #2f5d78;
   font-size: 0.95rem;
 }
 
@@ -66,15 +68,15 @@ body {
   padding: 1rem;
   text-decoration: none;
   color: inherit;
-  background: #fff;
-  border: 1px solid #e2e7ee;
+  background: #f3f8fb;
+  border: 1px solid #a2c6e1;
   border-radius: 12px;
-  box-shadow: 0 1px 2px rgba(28, 36, 48, 0.04);
+  box-shadow: 0 1px 2px rgba(6, 50, 86, 0.06);
 }
 
 .card:focus-visible {
-  border-color: #c5d0dd;
-  box-shadow: 0 8px 20px rgba(28, 36, 48, 0.08);
+  border-color: #8aadc4;
+  box-shadow: 0 8px 20px rgba(27, 49, 68, 0.1);
   outline: none;
 }
 
@@ -86,7 +88,7 @@ body {
 
 .card-desc {
   margin-top: 0.4rem;
-  color: #5b6675;
+  color: #4a6274;
   font-size: 0.9rem;
 }
 
@@ -96,15 +98,15 @@ body {
   padding: 0.7rem 1rem;
   font: inherit;
   font-weight: 650;
-  color: #fff;
-  background: #1c2430;
+  color: #f4f8fb;
+  background: #2a4a62;
   border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .scenario-button:focus-visible {
-  background: #2c3644;
+  background: #365c78;
   outline: none;
 }
 
@@ -114,13 +116,15 @@ body {
   margin: auto;
   padding: 1.15rem;
   overflow: auto;
-  border: 1px solid #e2e7ee;
+  color: #1b3144;
+  background: #f4f8fb;
+  border: 1px solid #c3d5e3;
   border-radius: 14px;
-  box-shadow: 0 16px 40px rgba(28, 36, 48, 0.18);
+  box-shadow: 0 16px 40px rgba(27, 49, 68, 0.18);
 }
 
 .scenario-dialog::backdrop {
-  background: rgba(28, 36, 48, 0.45);
+  background: rgba(27, 49, 68, 0.42);
 }
 
 .scenario-text {
@@ -150,23 +154,23 @@ body {
 }
 
 .scenario-link {
-  color: #fff;
-  background: #1c2430;
+  color: #f4f8fb;
+  background: #2a4a62;
 }
 
 .scenario-link:focus-visible {
-  background: #2c3644;
+  background: #365c78;
   outline: none;
 }
 
 .scenario-close {
-  color: #1c2430;
-  background: #f4f6f8;
-  border: 1px solid #e2e7ee;
+  color: #1b3144;
+  background: #e4eef5;
+  border: 1px solid #c3d5e3;
 }
 
 .scenario-close:focus-visible {
-  background: #e8edf3;
+  background: #d5e4ef;
   outline: none;
 }
 
@@ -180,17 +184,17 @@ body {
 
   .card:hover {
     transform: translateY(-2px);
-    border-color: #c5d0dd;
-    box-shadow: 0 8px 20px rgba(28, 36, 48, 0.08);
+    border-color: #8aadc4;
+    box-shadow: 0 8px 20px rgba(27, 49, 68, 0.1);
   }
 
   .scenario-button:hover,
   .scenario-link:hover {
-    background: #2c3644;
+    background: #365c78;
   }
 
   .scenario-close:hover {
-    background: #e8edf3;
+    background: #d5e4ef;
   }
 }
 
